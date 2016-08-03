@@ -4,17 +4,17 @@ set -e
 
 # Need to initialize?
 if [ ! -e /.initialized ]; then
-    if [ -z $AFP_LOGIN ]; then
+    if [[ -z $AFP_LOGIN ]]; then
         echo "no AFP_LOGIN specified!"
         exit 1
     fi
 
-    if [ -z $AFP_PASSWORD ]; then
+    if [[ -z $AFP_PASSWORD ]]; then
         echo "no AFP_PASSWORD specified!"
         exit 1
     fi
 
-    if [ -z $AFP_NAME ]; then
+    if [[ -z $AFP_NAME ]]; then
         echo "no AFP_NAME specified!"
         exit 1
     fi
